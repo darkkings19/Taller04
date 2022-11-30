@@ -1,13 +1,18 @@
 package Modelo;
 
+import java.awt.*;
+import java.util.List;
+
 public class Pais {
     private int ranking;
     private String namePais;
     private int id;
-    public Pais(int id,String namePais,int ranking){
+    private Image image;
+    public Pais(int id,String namePais,int ranking,Image image){
     this.id = id;
     this.namePais = namePais;
     this.ranking = ranking;
+    this.image = image;
     }
 
     public int getId() {
@@ -18,8 +23,12 @@ public class Pais {
         return ranking;
     }
 
-    public String getNamePais() {
+    public List<Pais> getNamePais() {
         return namePais;
+    }
+
+    public Image getImage() {
+        return image;
     }
 
     @Override
