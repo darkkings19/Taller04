@@ -27,14 +27,14 @@ public class Ventana_Inicial extends Ventana implements ActionListener {
     EXIT = this.generarBoton("EXIT",200,200,150,30);
     EXIT.addActionListener(null);
 
-    Pais = this.generarCampoDeEleccion(pais.getNamePais(),20,50,200,20)
+    Pais = this.generarCampoDeEleccion(pais.getNamePais(),20,50,200,20);
 
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == Jugadores) {
-            Ventana_Jugadores ventanaJugadores = new Ventana_Jugadores;
+            Ventana_Jugadores ventanaJugadores = new Ventana_Jugadores();
             this.dispose();
 
     }

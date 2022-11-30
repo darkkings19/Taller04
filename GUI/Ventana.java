@@ -7,7 +7,7 @@ import java.awt.*;
 import java.util.List;
 public abstract class Ventana extends JFrame{
 
- public Ventana{
+ public Ventana() {
   this.setLayout(null);
   this.setSize(400,300);
   this.setVisible(true);
